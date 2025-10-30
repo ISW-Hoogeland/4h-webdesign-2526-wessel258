@@ -8,7 +8,7 @@
    Warning 1: this settings may change your layout.
    Warning 2: keep the * as selector for all tags when uncommenting. */
 /*  * {border: 1px dotted black;}   */
-  
+
 /* Add semi-transparant dark background to all boxes
    The more boxes are on top of eachother the darker tghe background color
    Warning: keep the * as selector for all tags when uncommenting. */
@@ -18,7 +18,7 @@
 
 /* Settings to make it easier for you
    uncomment permanently when you understand the meaning of them */
-   
+
 /* border is included in width en height of boxes */
 /* * { box-sizing: border-box; } */
 
@@ -36,51 +36,62 @@
 
 /* add your css here, feel free to use comments and order them logically for better readability */
 body {
-display: grid;
-grid-template-areas:
-"header header"
-"nav main"
-"nav footer";
-grid-template-columns: 1fr 3fr;
-grid-template-rows: 120px 1fr 100px;
-background-color: var(--list-bg);
+   display: grid;
+   grid-template-areas:
+      "header header"
+      "nav main"
+      "nav footer";
+   grid-template-columns: 1fr 3fr;
+   grid-template-rows: 120px 1fr 100px;
+   background-color: var(--list-bg);
 
 }
+
 header {
-grid-area: header;
+   grid-area: header;
 }
+
 nav {
-grid-area: nav;
+   grid-area: nav;
+   display: flex;
+   align-items: center;
 }
+
+li {
+   margin: 20px;
+}
+
 main {
-grid-area: main;
+   grid-area: main;
 }
+
 footer {
-grid-area: footer;
+   grid-area: footer;
 }
+
 :root {
-    --bg-light: #f9fffb;
-    --text-dark: #2c3e50;
-    --font-main: 'Segoe UI', sans-serif;
+   --bg-light: #f9fffb;
+   --text-dark: #2c3e50;
+   --font-main: 'Segoe UI', sans-serif;
 
-    --h1-bg: #C1ECAF;
-    --h1-text: #1e2d2b;
-    --h2-text: #74A9CB;
-    --h2-border: var(--h1-bg);
-    --h3-text: #D67160;
+   --h1-bg: #C1ECAF;
+   --h1-text: #1e2d2b;
+   --h2-text: #74A9CB;
+   --h2-border: var(--h1-bg);
+   --h3-text: #D67160;
 
-    --list-bg: #DECAA1;
-    --list-border: #A1D69A;
-    --strong-text: var(--h3-text);
-    --code-bg: #f0f0f0;
+   --list-bg: #DECAA1;
+   --list-border: #A1D69A;
+   --strong-text: var(--h3-text);
+   --code-bg: #f0f0f0;
 
-    --def-bg: #f2fef9;
-    --def-border: var(--h1-bg);
-    --def-title: var(--text-dark);
+   --def-bg: #f2fef9;
+   --def-border: var(--h1-bg);
+   --def-title: var(--text-dark);
 
-    --nav-bg: var(--h2-text);
-    --nav-text: var(--code-bg);
+   --nav-bg: var(--h2-text);
+   --nav-text: var(--code-bg);
 
-    --footer-bg: var(--h1-bg); 
-    --footer-text: var(--h1-text);
+   --footer-bg: var(--h1-bg);
+   --footer-text: var(--h1-text);
 }

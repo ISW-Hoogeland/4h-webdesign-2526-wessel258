@@ -41,20 +41,25 @@ body {
       "header header"
       "nav main"
       "nav footer";
-   grid-template-columns: 1fr 3fr;
-   grid-template-rows: 120px 1fr 100px;
+   grid-template-columns: 1fr 5fr;
+   grid-template-rows: 80px 1fr 100px;
    background-color: var(--list-bg);
 
 }
 
 header {
+   background-color: #BFBFBF;
    grid-area: header;
+   border: 2px solid #1e2d2b;
 }
 
 nav {
+   background-color: var(--bg-light);
    grid-area: nav;
    display: flex;
    align-items: center;
+   border: 2px solid #1e2d2b;
+
 }
 
 li {
@@ -63,14 +68,19 @@ li {
 
 main {
    grid-area: main;
+   min-height: 60vh;
+   gap: ;
 }
 
 footer {
+   background-color: #BCAC9B;
    grid-area: footer;
+   border: 2px solid #1e2d2b;
+
 }
 
 :root {
-   --bg-light: #f9fffb;
+   --bg-light: #bfbfbf;
    --text-dark: #2c3e50;
    --font-main: 'Segoe UI', sans-serif;
 
@@ -89,7 +99,8 @@ footer {
    --def-border: var(--h1-bg);
    --def-title: var(--text-dark);
 
-   --nav-bg: var(--h2-text);
+   --nav-bg: var(--bg-light);
+
    --nav-text: var(--code-bg);
 
    --footer-bg: var(--h1-bg);

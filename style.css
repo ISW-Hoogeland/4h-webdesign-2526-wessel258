@@ -51,6 +51,7 @@ header {
    background-color: #BFBFBF;
    grid-area: header;
    border: 2px solid #1e2d2b;
+   padding-left: 15px;
 }
 
 nav {
@@ -70,12 +71,14 @@ main {
    grid-area: main;
    min-height: 60vh;
    gap: ;
+   padding-left: 15px;
 }
 
 footer {
    background-color: #BCAC9B;
    grid-area: footer;
    border: 2px solid #1e2d2b;
+   padding-left: 15px;
 
 }
 
